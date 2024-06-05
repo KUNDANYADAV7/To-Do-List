@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container">
+   <div class="header">
+    <div class="overlay">
+        <h1 class="colorful-text">
+            <span>T</span><span>o</span><span>-</span><span>D</span><span>o</span><span> </span><span></span><span>L</span><span>i</span><span>s</span><span>t</span>
+        </h1>
+    </div>
+</div>
+
+
+    <div class="task-input">
+        <input type="text" id="taskNameInput" placeholder="Enter Task Name">
+        <input type="date" id="taskDateInput" placeholder="Enter Date">
+        <button class="add-btn" onclick="addTask()"><i class="fas fa-plus"></i></button>
+    </div>
+    <table id="taskList" class="task-table">
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Task Name</th>
+                <th>Task Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="emptyMessage" class="empty-message">Enjoy your day ☀️</div>
+    <button class="delete-all-btn" onclick="deleteAllTasks()">Delete All Tasks</button>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
